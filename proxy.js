@@ -1,9 +1,9 @@
 // 你需要反代的 Channel 的 username
-const USERNAME = 'Clanstty'
+const USERNAME = 'lufsxchannel'
 // 访问这个 worker 的 URL，可以是初始的 .workers.dev 的域名。注意不是你想要嵌入到的网页的地址
-const BASE_URL = '//tg-channel.clansty.workers.dev'
+const BASE_URL = '//t.isteed.cc'
 // 在这里你还可以注入一些 CSS 和需要的头部信息
-const ICON = '<link rel="icon" type="image/webp" href="https://cdn.lwqwq.com/pic/41329_SaVJ3LWa.webp"/>' +
+const ICON = '<link rel="icon" type="image/webp" href="https://cdn.isteed.cc/favicon/favicon-32x32.webp"/>' +
              '<base target="_blank" />' + 
              `<style>
                 div.tgme_header_search {
@@ -85,7 +85,7 @@ async function handleRequest(request) {
         return replaceText(result)
     }
 
-    return await fetch(new Request('https://qwq.clansty.workers.dev',{
+    return await fetch(new Request('https://t.isteed.cc',{
         method: request.method,
         headers: request.headers,
         body: request.body
